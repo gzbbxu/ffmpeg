@@ -145,6 +145,8 @@ dstStride  和上面的一样
 
 ### 时间基数
 
+1s内有多少个时间单位 （1s 内有num/den 个时间单位）
+
 time_base : 后面的pts,以什么数来进行计算。时间基数最终换算成秒。
 
 AVRational {int num,int den}  其实是一个浮点数，在ffmpeg 中，为了精确，把浮点数数字位和浮点位分开存放。如果直接用float 存，有波动问题。用2个整数存浮点数。
