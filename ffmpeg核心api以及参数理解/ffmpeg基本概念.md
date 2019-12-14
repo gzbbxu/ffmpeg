@@ -137,7 +137,7 @@ dst
 
 dstStride  和上面的一样
 
-返回值：返回输出数据的高度。
+返回值：**返回输出数据的高度。**
 
 
 
@@ -298,4 +298,8 @@ int av_image_alloc(uint8_t *pointers[4], int linesizes[4],
 ```
 
 
+
+**av_frame_alloc**();  分配的是对象的空间
+
+**av_frame_get_buffer**(yuv,32); //32 表示对齐方式  真正分配yuv空间
 
